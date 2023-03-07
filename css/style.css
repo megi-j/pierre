@@ -44,7 +44,7 @@
 .dropdown-content {
   display: none;
   position: absolute;
-  top: 110%;
+  top: 102%;
   left: 0;
   background-color: rgba(241,241,241,0.7);
   min-width: 160px;
@@ -120,7 +120,7 @@
   right: 12%;
 }
 .line1, .line3, .line5, .line2, .line4 {
-  width: 3px;
+  width: 2px;
   height: 100px;
   background-color: white;
   position: absolute;
