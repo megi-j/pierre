@@ -14,12 +14,12 @@
   align-items: center;
 }
 .menu-box {
-
   background-color: rgba(255, 255, 255, 0.7);
   display: flex;
   justify-content: space-around;
   align-items: center;
   border-radius: 10px;
+  flex-wrap: wrap;
 }
 
 .dropbtn {
@@ -72,7 +72,6 @@
   min-height: 100vh;
   background-color: rgb(48, 10, 153);
   position: relative;
-  border: 1px solid red;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
@@ -83,7 +82,6 @@ svg{
   left: 0;
   width: 100%;
   height: 100%;
-  border: 2px solid yellow;
 }
 .chapter1, .chapter3, .chapter5, .chapter2, .chapter4{
   position: absolute;
@@ -175,8 +173,9 @@ svg{
     font-size: 12px;
   }
   .line1{
+    -webkit-top: 15%;
+    -moz-top:15%;
     top: 15%;
-    
   }
   .chapter1 {
     left: 16%;
@@ -232,5 +231,87 @@ svg{
   }
   .chapter4{
     right: 21%;
+  }
+}
+@media(max-width:480px){
+  .chapter1{
+    top: 15%;
+    left: 14%;
+  }
+  .line1{
+    top: 22%;
+  }
+  .chapter3{
+    top: 20%;
+    left: 40%;
+  }
+  .line3{
+    top: 26%;
+  }
+  .chapter5{
+    top: 17%;
+    right: 2%;
+  }
+  .line5{
+    top: 23%;
+  }
+  .chapter2{
+    bottom: 15%;
+    left: 22%;
+  }
+  .line2{
+    bottom: 22%;
+  }
+  .chapter4{
+    bottom: 29%;
+    right: 20%;
+  }
+}
+@media(max-width:350px){
+  .chapter1, .chapter3, .chapter5, .chapter2, .chapter4{
+    width: 80px;
+    height: 25px;
+    font-size: 10px;
+  }
+  .line1, .line3, .line5, .line2, .line4{
+    height: 60px;
+    width: 1px;
+  }
+  .chapter-section span{
+    font-size: 16px;
+  }
+  .chapter1{
+    top: 23%;
+    left: 13%;
+  }
+  .line1{
+    top: 29%;
+  }
+  .chapter3{
+    top: 26%;
+    left: 38%;
+  }
+  .line3{
+    top: 31%;
+  }
+  .chapter5{
+    top: 25%;
+  }
+  .line5{
+    top: 30%;
+  }
+  .chapter2{
+    bottom: 25%;
+    left: 21%;
+  }
+  .line2{
+    bottom: 30%;
+  }
+  .chapter4{
+    bottom: 33%;
+    right: 19%;
+  }
+  .line4{
+    bottom: 38%;
   }
 }
