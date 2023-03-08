@@ -30,6 +30,7 @@
  border: none;
   height: 100%;
   cursor: pointer;
+  border-bottom: 5px solid rgba(255, 255, 255, 0);
 }
 
 .dropdown {
@@ -63,7 +64,7 @@
 
 .dropdown:hover .dropdown-content {display: block;}
 
-.dropdown:hover .dropbtn {border-bottom: 5px solid white;}
+.dropdown:hover .dropbtn {border-bottom: 5px solid rgba(255, 255, 255, 1) }
 
 
 .chapter-section{
@@ -108,20 +109,20 @@ svg{
   left: 22%;
 }
 .chapter3{
-  top: 10%;
+  top: 12%;
   left: 41%;
   
 }
 .line3 {
-   top: 19%;
+   top: 20%;
    left: 48%;
 }
 .chapter5 {
-  top: 4%;
+  top: 6%;
   right: 3%;
 }
 .line5 {
-  top: 14%;
+  top: 15%;
   right: 10%;
 }
 .line1, .line3, .line5, .line2, .line4 {
@@ -132,11 +133,11 @@ svg{
   opacity: 0.5;
 }
 .chapter2 {
-  bottom: 6%;
+  bottom: 9%;
   left: 24%;
 }
 .line2 {
-  bottom: 16%;
+  bottom: 18%;
   left: 31%;
 }
 .chapter4 {
@@ -153,27 +154,83 @@ svg{
 .active {
   opacity: 1;
 }
-/* @media(max-width:1024px){
-  .chapter-section{
-     height: 150vh;
-  }
+@media(max-width:1025px){
+  
   .chapter1, .chapter3, .chapter5, .chapter2, .chapter4{
     width: 150px;
     height: 50px;
+    font-size: 15px;
+  }
+  .chapter-section span{
+    font-size: 25px;
   }
   .line1, .line3, .line5, .line2, .line4{
-    height: 80px;
+    height: 70px;
+  }
+} 
+@media(max-width: 800px){
+  .chapter1, .chapter3, .chapter5, .chapter2, .chapter4{
+    width: 100px;
+    height: 30px;
+    font-size: 12px;
   }
   .line1{
-    top: 43%;
+    top: 15%;
+    
+  }
+  .chapter1 {
     left: 16%;
   }
+  .chapter3 {
+    left: 42%;
+    top: 13%;
+  }
+  .chapter-section span{
+    font-size: 20px;
+  }
+  .chapter5 {
+    top: 8%;
+  right: 4%;
+  }
   .chapter2 {
-    bottom: 27%;
-    left: 27%;
+    bottom: 10%;
+  left: 25%;
   }
-  .line2 {
-    bottom: 35%;
-    left: 34%;
+  .line4{
+    bottom: 36%;
   }
-}  */
+}
+@media(max-width: 600px){
+  .line1{
+    top: 20%;
+    left: 23%;
+  }
+  .chapter1{
+    top:13%;
+  }
+  .chapter3 { 
+    top: 16%;
+  }
+  .line3{
+   top: 22%;
+   left: 49%;
+  }
+  .line5{
+    top: 19%;
+    right: 12%;
+  }
+  .chapter5{
+    top: 12%;
+    right: 4%;
+  }
+  .line2{
+    bottom: 20%;
+  }
+  .chapter2{
+    bottom: 13%;
+  left: 24%;
+  }
+  .chapter4{
+    right: 21%;
+  }
+}
