@@ -87,7 +87,7 @@ svg{
   position: absolute;
   width: 200px;
   height: 80px;
-  border: 2px solid white;
+  border: 5px double white;
   display: flex;
   justify-content: center;
   align-items: center;
